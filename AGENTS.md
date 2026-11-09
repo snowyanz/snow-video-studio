@@ -11,3 +11,20 @@
   - 规则改动后跑 `python3 -m pytest -q` 和 `rea-video eval eval/labels.yaml` / `eval/holdout*.yaml`，结果更新到 `eval/RESULTS.md`
   - 能力地图改完跑 `python3 scripts/validate_capabilities.py --matrix`
 - 不要提交任何密钥；VLM 配置通过 `--env-file` 读取。
+
+---
+
+## SNOW VIDEO STUDIO — default analysis workflow (project-specific addition)
+
+When the user attaches or explicitly supplies a video and requests analysis, read
+`skills/rea-video/SKILL.md`, then follow
+`skills/rea-video/references/snow-video-studio-workflow.md` as the reusable project
+default. An attachment alone is not a request to begin analysis.
+
+This addition preserves the original instructions above and the rea-video skill.
+It records the user's project-specific defaults: complete English reports,
+applicable feature coverage, detailed action timing when relevant, standalone
+project isolation, immutable source videos, and permission before paid APIs or
+optional AI-model downloads. Explicit instructions for the current task take
+precedence. Do not treat analysis authorization as authorization to generate or
+remake videos.
